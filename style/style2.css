@@ -1,0 +1,154 @@
+/* style for Home-Page */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: url("img/background.png") no-repeat;
+    background-size: cover;
+}
+
+#header{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    background-color: white;
+}
+
+#footer-container {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: white ;
+}
+
+#footer{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+#title-text {
+    display: flex;
+    justify-content: center;
+}
+
+#shopping-card {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Card */
+
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 45px;
+}
+
+.card-looks {
+    min-height: 50vh;
+    width: 35vh;
+    background: #1c1c1c;
+    color: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    transition: 0.5s ease;
+    border-radius: 11px 11px 10px 10px;
+    cursor: pointer;
+}
+
+.card-looks:hover:nth-child(1) {
+    box-shadow: 5px 5px 15px rgba(44, 14, 51, 0.9);
+}
+.card-looks:hover:nth-child(2) {
+    box-shadow: 5px 5px 15px rgba(66, 16, 16, 0.9);
+}
+.card-looks:hover:nth-child(3) {
+    box-shadow: 5px 5px 15px rgba(19, 51, 14, 0.9);
+}
+
+
+.card-looks:hover {
+    transform: scale(1.1);
+}
+
+.card-alignment {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.card-header {
+    font-size: 1.5vh;
+}
+
+
+.card-time {
+    color: orangered;
+
+}
+.card-time p{
+    margin-bottom: 10px;
+}
+
+#time-purple {
+    color: purple;
+}
+
+#time-red {
+    color: red;
+}
+
+#time-green {
+    color: green;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    width: 35vh;
+    height: 20vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(19, 19, 19, 0.9);
+}
+
+.card-text {
+    color: #7e7e7e;
+}
+
+@media only screen and (max-width: 1150px) {
+    .card-looks {
+        min-width: 10vh;
+    }
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card1top {
+        margin-top: 45px;
+    }
+    .card3bottom {
+        margin-bottom: 45px;
+    }
+}
+
+

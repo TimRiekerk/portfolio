@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #202E3B;
+    color: white;
+    overflow: hidden;
+}
+
+
+#divider-container{
+    display: flex;
+}
+
+#divider {
+    width: 50vw;
+    height: 100vh;
+}
+
+#divider-image {
+    width: 50vw;
+    height: 100vh;
+}
+
+
+#background-image {
+    height: 100%;
+    transition: 0.3s;
+    position: fixed;
+    width: 48%;
+}
+
+#background-image:hover {
+    opacity: 70%;
+    filter: blur(4px);
+}
+
+#field-alignment {
+    margin: 100px;
+}
+
+#field-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20vh;
+
+}
+
+#title {
+    font-size: 60px;
+}
+
+#about-me-text {
+    color: #838A92;
+}
+
+/* Expertise*/
+#expertise-main {
+    font-size: 30px;
+    padding: 0 0 25px 0;
+}
+
+#expertise {
+    height: 250px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px #1c1b1b;
+    background-color: #313a42;
+}
+
+#expertise-header {
+    display: flex;
+    justify-content: space-between;
+    color: #24A6E4;
+}
+
+#expertise-alignment {
+    padding: 25px;
+}
+
+/* Buttons */
+
+.arrow {
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+}
+
+.expertise-button-looks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.expertise-button-looks div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #4E555D;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    transition: 0.3s;
+    box-shadow: 3px 3px 4px #272e33;
+}
+
+.expertise-button-looks div:hover{
+    background-color: #24A6E4;
+}
+
+/* End of buttons */
+
+#expertise-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+}
+
+#expertise-sintlucas {
+    display: flex;
+    flex-direction: row;
+}
+
+#sintlucas {
+    color: #24A6E4;
+}
+
+    /* Header */
+
+    #header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        color: white;
+        position: fixed;
+        z-index: 1;
+    }
+
+    #header-background {
+        width: 100%;
+        height: 80px;
+        background: linear-gradient(0deg, rgb(22 22 22 / 0%) 0%, rgb(32, 46, 59) 100%);
+        position: fixed;
+        z-index: 1;
+    }
+
+    #nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #title-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 85%;
+        gap: 15px;
+        cursor: pointer;
+    }
+
+    #title-image {
+        height: 40px;
+        width: 40px;
+        border-radius: 10px;
+    }
+
+
+    #back-button {
+        font-size: large;
+        color: white;
+        background-color: transparent;
+        border: transparent;
+        border-right: 10px;;
+        cursor: pointer;
+    }
+
+    /* End Header*/
+
+
+@media screen {
+
+}

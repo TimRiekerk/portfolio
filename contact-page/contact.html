@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Page</title>
+
+    <link rel="stylesheet" type="text/css" href="contact-style.css">
+</head>
+<body>
+
+<div id="header-background">
+
+    <div id="header">
+
+        <div id="title-container">
+            <img id="title-image" src="img/aboutme.jpg" alt="">
+            <h2 id="title-text">About me</h2>
+        </div>
+
+        <div id="nav-container">
+            <button onclick="history.back()" id="back-button">Back</button>
+        </div>
+
+    </div>
+</div>
+
+
+    <div id="contact-container">
+        <div id="contact-card">
+            <h3>Contact</h3>
+            <div id="contact-alignment">
+                <form id="contact-form">
+                    <label for="email">Username / Email</label>
+                    <input type="text" id="email" name="username" placeholder="Your email..">
+                    <label for="pass">Message</label>
+                    <input type="text" id="pass" name="password" placeholder="Your message..">
+                </form>
+
+            </div>
+            <div>
+                <input type="submit" value="Send Email" id="contact-button">
+
+                <div id="register-container">
+                    <p id="disclaimer">Don't have a gmail yet?</p>
+                    <p id="register">&nbsp;Register</p>
+                </div>
+                <h3 id="easterEgg">Wow! You found an Easter egg, you're so cool!</h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="contact-script.js"></script>
+</body>
+</html>

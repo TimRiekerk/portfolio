@@ -1,0 +1,173 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: url("img/background.png") no-repeat;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+#contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+
+#contact-card {
+    height: 60vh;
+    width: 70vh;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    transition: 0.5s ease;
+    color: black;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact-alignment {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 70%;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    display: flex;
+    width: 40vh;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* PlaceHolder Colors (For JS) */
+
+
+
+/* Register */
+
+#register-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#register{
+    color: #45a049;
+    cursor: pointer;
+}
+
+#easterEgg {
+    display: none;
+    justify-content: center;
+}
+
+/* Header */
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    color: white;
+    position: fixed;
+    z-index: 1;
+}
+
+#header-background {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(0deg, rgb(22 22 22 / 0%) 0%, rgb(32, 46, 59) 100%);
+    position: fixed;
+    z-index: 1;
+}
+
+#nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#title-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 85%;
+    gap: 15px;
+    cursor: pointer;
+}
+
+#title-image {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+
+#back-button {
+    font-size: large;
+    color: white;
+    background-color: transparent;
+    border: transparent;
+    border-right: 10px;;
+    cursor: pointer;
+}
+
+/* End Header*/
+
+/* Animations (made them myself) */
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(4px); }
+    50% { transform: translateX(-4px); }
+    75% { transform: translateX(4px); }
+}
+
+@keyframes shaker {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(40px); }
+    50% { transform: translateX(-40px); }
+    75% { transform: translateX(40px); }
+}
+
+.shaking {
+    animation: shake 0.5s;
+}
+
+.shakering {
+    animation: shaker 1.0s;
+}
